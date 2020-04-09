@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+    {% block body %}
+
+        <section id="recrutement">
+
+            <h1>Nous sommes toujours à l'affût de nouveaux collaborateurs, alors n'hésitez pas à nous contacter</h1>
+            <div class="divider"></div>
+            {{ form_start(formCandidature) }}
+
+                {{ form_widget(formCandidature) }}
+
+            <button type="submit" class="btn btn-large btn-info">Envoyer votre demande</button>
+
+            {{ form_end(formCandidature) }}
+            {{ messageRetour ?? "" }}
+
+        </section>
+
+    {% endblock body %}
+

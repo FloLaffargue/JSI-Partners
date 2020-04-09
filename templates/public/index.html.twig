@@ -1,0 +1,218 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<section id="home">
+    <div class="home-bg" >
+    </div>
+    <div class="titre">
+        <h1><strong>JSI</strong><br>Partners</h1>
+        <p>"Votre spécialiste dans le conseil en immobilier d'entreprise"</p>
+        <a class="btn" href="{{ url("recherche") }}" style="border-radius:5px 5px 5px 5px; margin-top:40px; border:1px solid grey; color:black">Rechercher un bien<a>
+    </div>
+</section>
+
+<div class="parallax parallax3"></div>
+
+<div id="methodes">
+
+    <section id="services">
+        <h1>SERVICES
+        <div class="divider"></div>
+        </h1>
+        <blockquote>"De l'estimation de la valeur du bien, à la signature du contrat, JSI vous offre un service sur-mesure tout au long du processus de commercialisation"</blockquote>
+
+            <article class="card view view-first">
+                <img src="{{ absolute_url(asset('assets/img/cahier.jpg')) }} " class="card-img-top" alt="">
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2 class="card-title">ETAPE 1</h2>
+                        <h2 class="card-title">Rencontre</h2>
+                        <p class="card-text">
+                            Prise de contact 
+                            et analyse de votre cahier des charges
+                        </p>
+                    </div>
+            </article>
+
+            <article class="card view view-third">
+                <img src="{{ absolute_url(asset('assets/img/selection.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <h2 class="card-title">ETAPE 2</h2>
+                    <h2 class="card-title">Première sélection</h2>
+                    <p class="card-text">
+                        Sélection des biens adaptés à votre recherche
+                    </p>
+                </div>
+            </article>
+
+            <article class="card view view-fourth">
+                <img src="{{ absolute_url(asset('assets/img/visite.jpg')) }} " class="card-img-top" alt=""></figure>
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <h2 class="card-title">ETAPE 3</h2>
+                    <h2 class="card-title">Premières visites</h2>
+                    <p class="card-text">
+                        Organisation de visites puis de revisites sur les actifs retenus
+                    </p>
+                </div>
+            </article>
+
+            <article class="card view view-sixth">
+            <img src="{{ absolute_url(asset('assets/img/shortlist.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <h2 class="card-title">ETAPE 4</h5>
+                    <h2 class="card-title">Short list</h2>
+                    <p class="card-text">
+                        Identification de site / dossier de candidature
+                    </p>
+                </div>
+            </article>
+
+            <article class="card view view-seventh">
+                <img src="{{ absolute_url(asset('assets/img/dossier.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <h2 class="card-title">ETAPE 5</h5>
+                    <h2 class="card-title">Aide Juridique</h2>
+                    <p class="card-text">
+                        Négociation juridique et financière
+                    </p>
+                </div>
+            </article>
+
+            <article class="card view view-eighth">
+                <img src="{{ absolute_url(asset('assets/img/contract.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <h2 class="card-title">ETAPE 6</h2>
+                    <h2 class="card-title">Signature</h2>
+                    <p class="card-text">
+                        Accompagnement pour vos aménagements (space-planning et proposition de devis)
+                    </p>
+                </div>
+            </article>
+    </section>
+
+    <div class="parallax parallax1"></div>
+
+    <section id="commercialisation">
+        <h1>COMMERCIALISATION
+            <div class="divider"></div>
+        </h1>
+        
+        <blockquote>"De l'estimation de la valeur du bien, à la signature du contrat, JSI vous offre un service sur-mesure tout au long du processus de commercialisation"</blockquote>
+            
+            <article class="card view view-fourth">
+                <img src="{{ absolute_url(asset('assets/img/localisation.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <p class="card-text">Visite de l’actif</p>
+                </div>
+            </article>
+
+            <article class="card view view-tenth">
+                <img src="{{ absolute_url(asset('assets/img/estimation.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <p class="card-text">Estimation de valeur par rapport aux dernières transactions réalisées</p>
+                </div>
+            </article>
+
+            <article class="card view view-seventh">
+                <img src="{{ absolute_url(asset('assets/img/strategie.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <p class="card-text">Définition de la stratégie de commercialisation et identification des cibles potentielles</p>
+                </div>
+            </article>
+
+            <article class="card view view-tenth">
+                <img src="{{ absolute_url(asset('assets/img/diffusion.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <p class="card-text">Communication: diffusion de l’offre à toute notre base de données clients et à tous nos confrères présents sur le marché</p>
+                </div>
+            </article>
+
+            <article class="card view view-eighth">
+                <img src="{{ absolute_url(asset('assets/img/target.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <p class="card-text">Stratégie marketing:prospection des sociétés cibles, mailing, prospection terrain</p>
+                </div>
+            </article>
+
+            <article class="card view view-seventh">
+                <img src="{{ absolute_url(asset('assets/img/assistance.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <p class="card-text">Rapport de commercialisation régulier</p>
+                </div>
+            </article>
+
+            <article class="card view view-eighth">
+                <img src="{{ absolute_url(asset('assets/img/negociation.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <p class="card-text">Assistance dans le choix des dossiers de candidature: évaluation de la solvabilité des potentiels preneurs</p>
+                </div>
+            </article>
+
+            <article class="card view view-tenth">
+                <img src="{{ absolute_url(asset('assets/img/juridique.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                    <p class="card-text">Accompagnement dans les négociations jusqu’à la signature des actes</p>                </div>
+            </article>
+
+            <article class="card view view-eighth">
+                <img src="{{ absolute_url(asset('assets/img/checking.jpg')) }} " class="card-img-top" alt="">
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                   
+                    <p class="card-text">Établissement de l’état des lieux</p>
+                </div>
+            </article>
+        
+    </section>
+</div>
+
+<div class="parallax parallax2"></div>
+
+    <section id="contact_home">
+
+        <h1>Contactez-nous</h1>
+        <div class="divider"></div>
+
+        <blockquote>"De l'estimation de la valeur du bien, a la signature du contrat, JSI vous offre un service sur-mesure tout au long du processus de commercialisation"</blockquote>
+
+            {{ form_start(formRecherche) }}
+            {{ form_widget(formRecherche) }}
+            <button type="submit" class="btn btn-large btn-info">Envoyer votre demande</button>
+            {{ form_end(formRecherche) }}
+            {{ messageRetour ?? "" }}
+        
+    </section>
+
+{% endblock %}
+
+{% block javascripts  %}{% endblock %}
+

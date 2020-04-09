@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+    {% block body %}
+        <section id="contact">
+            <h1>Contactez-nous</h1>
+            <div class="divider"></div>
+
+            {{ form_start(formRecherche) }}
+            
+                {{ form_widget(formRecherche) }}
+            <button type="submit" class="btn btn-large btn-info">Envoyer votre demande</button>
+            {{ form_end(formRecherche) }}
+            
+            {{ messageRetour ?? "" }}
+        </section>
+    {% endblock body %}

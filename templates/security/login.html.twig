@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section id="login">
+<div>
+<h1>Connexion</h1>
+
+<form action="{{ path('security_login') }}" method="post">
+
+    <div class="form-group">
+        <label for="">Login</label>
+        <input type="text" class="form-control" name="_username" required>
+    </div>
+    <div class="form-group">
+        <label for="">Mot de passe</label>
+        <input type="password" class="form-control" name="_password" required>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Connexion</button>
+    </div>
+
+    <a href="{{ path('security_password_forget')}}" class="btn btn.success">Mot de passe oublié ?</a>
+
+    {% if error %}
+        <div>Login ou mot de passe incorrect</div>
+    {% endif %}
+
+</form>
+</div>
+</section>
+{% endblock %}
